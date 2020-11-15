@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bellota Text", cursive;
+  background: #e5e5e5;
+}
+
+main {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 800;
+  color: #121314;
+  transition: linear 300ms;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 700px) {
+    font-size: 60px;
+  }
+}

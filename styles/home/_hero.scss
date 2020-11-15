@@ -1,0 +1,31 @@
+.header {
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: linear 300ms;
+
+  &::before {
+    @include header-hero;
+    content: "";
+    background-image: url(../../images/yucar-fotografik-cfR-V1QuEKw-unsplash.jpg);
+    opacity: 40%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  @media (min-width: 500px) {
+    place-items: unset;
+  }
+
+  &__wraper {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    margin: 10% 15% 18% 15%;
+    transition: linear 300ms;
+  }
+}

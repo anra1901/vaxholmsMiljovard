@@ -1,0 +1,41 @@
+@mixin menu-wraper {
+  display: flex;
+  flex-direction: column;
+  transition: linear 300ms;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@mixin image-sizing {
+  height: 100%;
+  width: 100%;
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@mixin header-hero {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: linear 300ms;
+
+  @media (min-width: 700px) {
+    min-height: 800px;
+  }
+
+  @media (min-width: 1100px) {
+    min-height: 100vh;
+    min-width: 100%;
+  }
+}

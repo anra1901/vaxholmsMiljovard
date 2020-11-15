@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Bellota Text", cursive;
+  background: #e5e5e5;
+}
+
+main {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 800;
+  color: #121314;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.menu-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+  .menu-wraper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.menu-wraper__logo-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  max-width: 125px;
+  max-height: 91px;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.menu-wraper__logo-wrap img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 500px) {
+  .menu-wraper__logo-wrap {
+    max-width: 140px;
+    max-height: 102px;
+    margin: 50px auto 0 70px;
+  }
+}
+
+.footer {
+  background: #395D95;
+  color: white;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    min-height: 317px;
+  }
+}
+
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 900px) {
+  .footer h4 {
+    font-size: 30px;
+  }
+}
+
+.footer__text {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .footer__text {
+    font-size: 20px;
+  }
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+.header::before {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  content: "";
+  background-image: url(../../images/yucar-fotografik-cfR-V1QuEKw-unsplash.jpg);
+  opacity: 40%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media (min-width: 700px) {
+  .header::before {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header::before {
+    min-height: 100vh;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  .header {
+    place-items: unset;
+  }
+}
+
+.header__wraper {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 10% 15% 18% 15%;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  font-weight: bold;
+  color: #121314;
+  margin: 40px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 1180px) {
+  .about {
+    font-size: 24px;
+    margin: 60px;
+  }
+}
+
+.about__heading {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1180px) {
+  .about__heading {
+    font-size: 45px;
+    margin-bottom: 19px;
+    margin-top: 50px;
+  }
+}
+
+.about__heading__underline {
+  max-width: 100px;
+  max-height: 2px;
+  min-width: 100px;
+  min-height: 2px;
+  background: #121314;
+  margin-bottom: 50px;
+}
+
+.about__text {
+  margin: 0 100px;
+}
+/*# sourceMappingURL=style.css.map */

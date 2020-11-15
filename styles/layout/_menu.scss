@@ -1,0 +1,19 @@
+.menu-wraper {
+  @include menu-wraper;
+  flex-wrap: wrap;
+
+  &__logo-wrap {
+    @include image-sizing;
+    position: relative;
+    max-width: 125px;
+    max-height: 91px;
+    margin-right: 0;
+    margin-top: 20px;
+
+    @media (min-width: 500px) {
+      max-width: 140px;
+      max-height: 102px;
+      margin: 50px auto 0 70px;
+    }
+  }
+}
