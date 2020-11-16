@@ -1,14 +1,14 @@
 .footer {
     background: #395D95;
     color: white;
-    min-height: 150px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   
     @media (min-width: 900px) {
-      min-height: 317px;
+      min-height: 200px;
     }
   
     h4 {

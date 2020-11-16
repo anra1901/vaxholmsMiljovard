@@ -1,41 +1,32 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-  font-weight: bold;
-  color: #121314;
-  margin: 40px;
-  transition: linear 300ms;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  @media (min-width: 1180px) {
-    font-size: 24px;
-    margin: 60px;
-  }
+  @include section;
 
   &__heading {
-    font-size: 30px;
-    margin-bottom: 10px;
-
-    @media (min-width: 1180px) {
-      font-size: 45px;
-      margin-bottom: 19px;
-      margin-top: 50px;
-    }
+    @include section-heading;
 
     &__underline {
-      max-width: 100px;
-      max-height: 2px;
-      min-width: 100px;
-      min-height: 2px;
-      background: #121314;
-      margin-bottom: 50px;
+      @include heading-underline;
     }
   }
 
   &__text {
+    margin: 0 10px;
+
+    @media (min-width: 500px) {
       margin: 0 100px;
+    }
+  }
+
+  &__cert-logo-wrap {
+    @include image-sizing;
+    max-width: 125px;
+    max-height: 91px;
+    margin: 40px 0 15px 0;
+
+    @media (min-width: 500px) {
+      max-width: 140px;
+      max-height: 102px;
+      margin: 50px 0 20px 0;
+    }
   }
 }
