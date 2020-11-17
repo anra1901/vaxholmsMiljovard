@@ -23,6 +23,12 @@
   }
 }
 
+@mixin menu-link-style {
+  font-weight: bold;
+  color: #121314;
+  text-decoration: none;
+}
+
 @mixin header-hero {
   min-height: 700px;
   background-repeat: no-repeat;

@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap"
       rel="stylesheet"
@@ -24,6 +21,16 @@
               alt="Logo Vaxholms Miljövård AB"
             />
           </div>
+          <nav>
+            <ul class="menu-wraper__link-list">
+              <li>
+                <a href="#about" class="menu-wraper__links--active">Vilka är vi?</a>
+              </li>
+              <li>
+                <a href="#contact-info" class="menu-wraper__links--active">Kontakta oss</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="header__wraper">
           <h1 class="header__wraper__heading">
@@ -35,7 +42,7 @@
     </header>
 
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="about__heading">Vilka är vi?</h2>
         <div class="about__heading__underline"></div>
         <p class="about__text-one">
@@ -58,7 +65,7 @@
         </div>
       </section>
 
-      <section class="contact-info">
+      <section class="contact-info" id="contact-info">
         <h2 class="contact-info__heading">Kontakta oss</h2>
         <div class="contact-info__heading__underline"></div>
         <span class="contact-info__email-label">E-mail:</span>
