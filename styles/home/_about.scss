@@ -9,11 +9,17 @@
     }
   }
 
-  &__text {
-    margin: 0 10px;
+  &__text-one,
+  &__text-two,
+  &__text-three {
+    margin: 0 10px 30px 10px;
 
     @media (min-width: 500px) {
-      margin: 0 100px;
+      margin: 0 80px 40px 80px;
+    }
+
+    @media (min-width: 700px) {
+      margin: 0 150px 50px 150px;
     }
   }
 
@@ -21,12 +27,12 @@
     @include image-sizing;
     max-width: 125px;
     max-height: 91px;
-    margin: 40px 0 15px 0;
+    margin: 10px 0 15px 0;
 
     @media (min-width: 500px) {
       max-width: 140px;
       max-height: 102px;
-      margin: 50px 0 20px 0;
+      margin: 20px 0 20px 0;
     }
   }
 }
