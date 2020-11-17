@@ -25,6 +25,7 @@ h1 {
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
   text-align: center;
+  margin: 30px 0;
 }
 
 @media (min-width: 600px) {
@@ -72,11 +73,11 @@ h1 {
   height: 100%;
   width: 100%;
   position: relative;
-  max-width: 100px;
-  max-height: 70px;
+  max-width: 120px;
+  max-height: 90px;
   margin-right: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
