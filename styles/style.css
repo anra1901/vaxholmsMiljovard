@@ -270,7 +270,7 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   color: #121314;
-  margin: 40px;
+  margin: 70px 40px;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
   -webkit-box-pack: center;
@@ -291,7 +291,7 @@ h1 {
 @media (min-width: 1180px) {
   .about {
     font-size: 24px;
-    margin: 60px;
+    margin: 100px 60px;
   }
 }
 
@@ -369,7 +369,7 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   color: #121314;
-  margin: 40px;
+  margin: 70px 40px;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
   -webkit-box-pack: center;
@@ -379,7 +379,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: #F5F2E9;
+  background-color: #dadada;
   border-radius: 100px;
   margin: 60px 30px;
   padding: 50px;
@@ -394,7 +394,7 @@ h1 {
 @media (min-width: 1180px) {
   .contact-info {
     font-size: 24px;
-    margin: 60px;
+    margin: 100px 60px;
   }
 }
 
