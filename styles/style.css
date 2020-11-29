@@ -549,10 +549,6 @@ h1 {
   }
 }
 
-.policy__quality__cursiv-text {
-  font-style: italic;
-}
-
 .policy__quality__list {
   text-align: left;
   margin-left: 0 20px;
@@ -581,6 +577,10 @@ h1 {
   .policy__quality__list {
     margin: 0 300px 20px 300px;
   }
+}
+
+.policy__quality__list__cursiv-text {
+  font-style: italic;
 }
 
 .policy__environment {
