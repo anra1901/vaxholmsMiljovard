@@ -86,3 +86,41 @@
   background: #121314;
   margin-bottom: 50px;
 }
+
+@mixin section-text {
+  margin: 0 10px 10px 10px;
+
+  @media (min-width: 500px) {
+    margin: 0 80px 20px 80px;
+  }
+
+  @media (min-width: 1000px) {
+    margin: 0 200px 30px 200px;
+  }
+}
+
+@mixin section-list {
+  text-align: left;
+  margin-left: 0 20px;
+  list-style: none;
+
+  li {
+    margin: 10px 0 0 25px;
+
+    &::before {
+      content: "•";
+      color: #395d95;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
+  @media (min-width: 500px) {
+    margin: 0 80px 40px 80px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 300px 20px 300px;
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +76,7 @@ h1 {
   position: relative;
   max-width: 120px;
   max-height: 90px;
-  margin-right: 0;
+  margin: auto;
   margin-top: 40px;
   margin-bottom: 50px;
   -ms-flex-item-align: center;
@@ -93,7 +94,7 @@ h1 {
   max-height: 100%;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 760px) {
   .menu-wraper__logo-wrap {
     max-width: 180px;
     max-height: 130px;
@@ -448,5 +449,233 @@ h1 {
 .contact-info__phone-label {
   margin: 30px 0 5px 0;
   font-size: larger;
+}
+
+.policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  font-weight: bold;
+  color: #121314;
+  margin: 70px 40px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .policy {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .policy {
+    font-size: 24px;
+    margin: 100px 60px;
+  }
+}
+
+.policy__heading {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1180px) {
+  .policy__heading {
+    font-size: 45px;
+    margin-bottom: 19px;
+  }
+}
+
+.policy__heading__underline {
+  max-width: 100px;
+  max-height: 2px;
+  min-width: 100px;
+  min-height: 2px;
+  background: #121314;
+  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.policy__about-heading, .policy__quality-heading, .policy__environment-heading, .policy__work-environment-heading {
+  color: #395d95;
+  background-color: #dad3d3;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 50px 20px 20px 20px;
+}
+
+.policy__about-us {
+  margin: 0 10px 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .policy__about-us {
+    margin: 0 80px 20px 80px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .policy__about-us {
+    margin: 0 200px 30px 200px;
+  }
+}
+
+.policy__quality {
+  margin: 0 10px 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .policy__quality {
+    margin: 0 80px 20px 80px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .policy__quality {
+    margin: 0 200px 30px 200px;
+  }
+}
+
+.policy__quality__cursiv-text {
+  font-style: italic;
+}
+
+.policy__quality__list {
+  text-align: left;
+  margin-left: 0 20px;
+  list-style: none;
+}
+
+.policy__quality__list li {
+  margin: 10px 0 0 25px;
+}
+
+.policy__quality__list li::before {
+  content: "•";
+  color: #395d95;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (min-width: 500px) {
+  .policy__quality__list {
+    margin: 0 80px 40px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .policy__quality__list {
+    margin: 0 300px 20px 300px;
+  }
+}
+
+.policy__environment {
+  margin: 0 10px 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .policy__environment {
+    margin: 0 80px 20px 80px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .policy__environment {
+    margin: 0 200px 30px 200px;
+  }
+}
+
+.policy__environment__highlight {
+  font-style: italic;
+}
+
+.policy__environment__list {
+  text-align: left;
+  margin-left: 0 20px;
+  list-style: none;
+}
+
+.policy__environment__list li {
+  margin: 10px 0 0 25px;
+}
+
+.policy__environment__list li::before {
+  content: "•";
+  color: #395d95;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (min-width: 500px) {
+  .policy__environment__list {
+    margin: 0 80px 40px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .policy__environment__list {
+    margin: 0 300px 20px 300px;
+  }
+}
+
+.policy__work-environment {
+  margin: 0 10px 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .policy__work-environment {
+    margin: 0 80px 20px 80px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .policy__work-environment {
+    margin: 0 200px 30px 200px;
+  }
+}
+
+.policy__work-environment__list {
+  text-align: left;
+  margin-left: 0 20px;
+  list-style: none;
+}
+
+.policy__work-environment__list li {
+  margin: 10px 0 0 25px;
+}
+
+.policy__work-environment__list li::before {
+  content: "•";
+  color: #395d95;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (min-width: 500px) {
+  .policy__work-environment__list {
+    margin: 0 80px 40px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .policy__work-environment__list {
+    margin: 0 300px 20px 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
