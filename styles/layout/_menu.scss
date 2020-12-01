@@ -20,16 +20,7 @@
   }
 
   &__link-list {
-    list-style-type: none;
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(3, max-content);
-    place-items: center;
-    transition: linear 300ms;
-
-    @media (min-width: 500px) {
-      padding-right: 50px;
-    }
+    @include link-list;
   }
 
   &__links {
@@ -44,10 +35,15 @@
 
     &--active {
       @include menu-link-style;
-      border-bottom: 3px solid rgb(252, 234, 202);
+      border-bottom: 3px solid #395d95;
       margin: 15px;
       padding-bottom: 7px;
       transition: linear 300ms;
+
+      &:hover {
+        color: #4773b9;
+        font-size: 20px;
+      }
 
       @media (min-width: 500px) {
         margin: 30px;

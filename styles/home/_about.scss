@@ -23,16 +23,19 @@
     }
   }
 
-  &__cert-logo-wrap {
-    @include image-sizing;
-    max-width: 125px;
-    max-height: 91px;
-    margin: 10px 0 15px 0;
+  &__cert-title {
+    @include section-heading;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
 
     @media (min-width: 500px) {
-      max-width: 140px;
-      max-height: 102px;
-      margin: 20px 0 20px 0;
+      font-size: 35px;
     }
+  }
+
+  &__cert-logo-wrap {
+    @include image-sizing;
+    @include cert-logo;
   }
 }

@@ -3,6 +3,7 @@
 
   &__heading {
     @include section-heading;
+    margin-bottom: 0;
 
     &__underline {
       @include heading-underline;
@@ -17,20 +18,10 @@
     color: #395d95;
     background-color: #dad3d3;
     padding: 15px;
+    border: 1px solid #395d95;
     border-radius: 30px;
-    margin: 50px 20px 20px 20px;
-  }
-
-  &__about-us {
-    margin: 0 10px 10px 10px;
-
-    @media (min-width: 500px) {
-      margin: 0 80px 20px 80px;
-    }
-
-    @media (min-width: 1000px) {
-      margin: 0 200px 30px 200px;
-    }
+    margin: 40px 20px 20px 20px;
+    box-shadow: 0px 0px 11px 0px #395d95;
   }
 
   &__quality {
@@ -54,6 +45,28 @@
 
     &__list {
       @include section-list;
+    }
+
+    &__cert-title {
+      @include section-heading;
+      font-size: 20px;
+
+      @media (min-width: 500px) {
+        margin-top: 10px;
+        font-size: 30px;
+      }
+    }
+
+    &__cert-logo-wrap {
+      @include image-sizing;
+      @include cert-logo;
+      margin-top: 10px;
+      margin-bottom: 80px;
+
+      @media (min-width: 500px) {
+        margin-top: 20px;
+        margin-bottom: 150px;
+      }
     }
   }
 

@@ -23,6 +23,19 @@
   }
 }
 
+@mixin link-list {
+  list-style-type: none;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, max-content);
+  place-items: center;
+  transition: linear 300ms;
+
+  @media (min-width: 500px) {
+    padding-right: 50px;
+  }
+}
+
 @mixin menu-link-style {
   font-weight: bold;
   color: #121314;
@@ -101,7 +114,8 @@
 
 @mixin section-list {
   text-align: left;
-  margin-left: 0 20px;
+  // margin-left: 0 20px;
+  margin: 0 20px 30px 20px;
   list-style: none;
 
   li {
@@ -121,6 +135,18 @@
   }
 
   @media (min-width: 1200px) {
-    margin: 0 300px 20px 300px;
+    margin: 0 300px 40px 300px;
+  }
+}
+
+@mixin cert-logo {
+  max-width: 145px;
+  max-height: 91px;
+  margin: 10px 0 25px 0;
+
+  @media (min-width: 500px) {
+    max-width: 200px;
+    max-height: 102px;
+    margin: 20px 0 90px 0;
   }
 }
