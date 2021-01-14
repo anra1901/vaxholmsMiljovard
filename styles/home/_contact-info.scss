@@ -1,17 +1,6 @@
 .contact-info {
   @include section;
-  background-color: #f8f0e8;
   border-radius: 100px;
-  margin: 60px 30px;
-  padding: 50px;
-
-  @media (min-width: 600px) {
-    margin: 80px 20vw;
-  }
-
-  @media (min-width: 1000px) {
-    margin: 80px 35vw;
-  }
 
   &__heading {
     @include section-heading;

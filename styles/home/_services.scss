@@ -1,0 +1,51 @@
+.services {
+  @include section;
+  background-color: #f5f3f0;
+  margin: 0;
+  padding: 90px 0;
+
+  @media (min-width: 1180px) {
+    margin: 0;
+  }
+
+  &__heading {
+    @include section-heading;
+
+    &__underline {
+      @include heading-underline;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
+
+    &__img {
+      @include image-sizing;
+      margin: 30px 30px 40px 30px;
+      max-width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 100px;
+      }
+
+      @media (min-width: 700px) {
+        margin: 50px;
+        max-width: 200px;
+        height: 200px;
+      }
+    }
+
+    h3 {
+      margin-top: 15px;
+    }
+  }
+}

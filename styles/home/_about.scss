@@ -1,6 +1,9 @@
 .about {
   @include section;
-  text-align: left;
+
+  @media (min-width: 500px) {
+    text-align: left;
+  }
 
   &__heading {
     @include section-heading;
