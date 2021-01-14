@@ -1,3 +1,4 @@
+// Write out current year in footer
 const date = new Date()
 const year = date.getFullYear()
 
