@@ -1,0 +1,36 @@
+.clients {
+  @include section;
+
+  &__heading {
+    @include section-heading;
+
+    &__underline {
+      @include heading-underline;
+    }
+  }
+
+  &__logo-container {
+    @include image-sizing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    @media (min-width: 500px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      margin: 20px;
+      max-width: 200px;
+      opacity: 70%;
+
+      @media (min-width: 500px) {
+        margin: 40px;
+        max-width: 400px;
+      }
+    }
+  }
+}

@@ -1,6 +1,12 @@
 .contact-info {
   @include section;
-  border-radius: 100px;
+  background-color: #f5f3f0;
+  margin: 0;
+  padding: 90px 0;
+
+  @media (min-width: 1180px) {
+    margin: 0;
+  }
 
   &__heading {
     @include section-heading;
@@ -17,10 +23,10 @@
 
   a {
     text-decoration: none;
-    color: #1c4f9d;
+    color: #1b7b88;
 
     &:hover {
-      color: #2568cf;
+      color: #21998f;
     }
 
     @media (max-width: 300px) {

@@ -27,12 +27,16 @@
   list-style-type: none;
   display: grid;
   position: relative;
-  grid-template-columns: repeat(3, max-content);
+  gap: 20px;
+  grid-template-rows: repeat(4, max-content);
   place-items: center;
   transition: linear 300ms;
 
   @media (min-width: 500px) {
+    grid-template-columns: repeat(4, max-content);
     padding-right: 50px;
+  gap: 0;
+
   }
 }
 
@@ -84,6 +88,7 @@
 @mixin section-heading {
   font-size: 30px;
   margin-bottom: 10px;
+  color: #395d95;
 
   @media (min-width: 1180px) {
     font-size: 45px;
@@ -96,7 +101,8 @@
   max-height: 2px;
   min-width: 100px;
   min-height: 2px;
-  background: #121314;
+  background: #29426b;
+  // background: #121314;
   margin-bottom: 50px;
 }
 

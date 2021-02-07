@@ -64,4 +64,12 @@
     @include image-sizing;
     @include cert-logo;
   }
+  
+  .divider {
+    margin-top: 100px;
+    width: 80vw;
+    height: 2px;
+    background: rgb(99, 97, 97);
+  }
 }
+
