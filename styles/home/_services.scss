@@ -13,7 +13,11 @@
 
     &__underline {
       @include heading-underline;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+
+      @media (min-width: 1180px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -28,7 +32,7 @@
 
     &__img {
       @include image-sizing;
-      margin: 30px 30px 40px 30px;
+      margin: 50px 30px 40px 30px;
       max-width: 100px;
       height: 100px;
       margin-bottom: 20px;
