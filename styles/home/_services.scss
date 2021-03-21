@@ -50,7 +50,12 @@
     h3 {
       margin-top: 15px;
       color: #304d7c;
+      font-weight: bolder;
+      
+      @media (min-width: 700px) {
       font-weight: 200;
+        
+      }
     }
   }
 }
