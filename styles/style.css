@@ -754,7 +754,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .clients__logo-container img {
@@ -767,7 +767,7 @@ h2 {
   max-height: 100%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .clients__logo-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -790,7 +790,7 @@ h2 {
 
 @media (min-width: 500px) {
   .clients__logo-container img {
-    margin: 40px;
+    margin: 30px;
     max-width: 300px;
   }
 }
