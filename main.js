@@ -1,9 +1,13 @@
-// WRITE OUT YEAR IN FOOTER 
+let modal = document.getElementById("myModal");
 
-// const date = new Date()
-// const year = date.getFullYear()
+let img = document.getElementById("myImg");
+let modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+}
 
-// const footerText = document.querySelector(".footer__text")
-// const yearsText = document.createElement("p")
-// yearsText.textContent = "1993 - " + year
-// footerText.appendChild(yearsText)
+let span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
