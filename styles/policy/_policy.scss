@@ -7,7 +7,7 @@
 
     &__underline {
       @include heading-underline;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 
@@ -19,7 +19,7 @@
     // background-color: #c5c8d3;
     padding: 15px;
     border-radius: 30px;
-    margin: 40px 20px 20px 20px;
+    margin: 20px;
   }
 
   &__quality {
@@ -55,20 +55,19 @@
       }
     }
 
-    
     &__cert-logo-wrap {
       @include image-sizing;
       @include cert-logo;
       margin-top: 10px;
       margin-bottom: 80px;
-      
+
       @media (min-width: 500px) {
         margin-top: 20px;
         margin-bottom: 150px;
       }
     }
   }
-  
+
   #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -139,5 +138,47 @@
     &__list {
       @include section-list;
     }
+  }
+}
+
+.code-conduct {
+  @include section;
+
+  &__heading {
+    @include section-heading;
+    margin-bottom: 0;
+
+    &__underline {
+      @include heading-underline;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__work-environment-heading {
+    color: #2c4670;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 20px;
+  }
+
+  &__work-environment {
+    @include section-text;
+
+    &__list {
+      @include section-list;
+    }
+  }
+
+  &__ceo-info {
+    font-weight: 600;
+
+    &__ceo-name {
+      font-style: italic;
+    }
+  }
+
+  &__divider {
+    @include heading-underline;
+    margin: 30px 0;
   }
 }
